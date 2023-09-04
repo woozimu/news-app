@@ -1,3 +1,4 @@
+import 'package:cleanlearn/core/util/constants.dart';
 import 'package:cleanlearn/features/daily_news/domain/entities/article.dart';
 
 class ArticleModel extends ArticleEntity {
@@ -20,7 +21,7 @@ class ArticleModel extends ArticleEntity {
       url: map['url'] ?? "",
       urlToImage: map['urlToImage'] != null && map['urlToImage'] != ""
           ? map['urlToImage']
-          : null,
+          : kDefaultImage,
       publishedAt: map['publishedAt'] ?? "",
       content: map['content'] ?? "",
     );
